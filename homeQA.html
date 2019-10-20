@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Project Template</title> 
+
+<style type="text/css"> 
+body { 
+margin-left: auto; 
+margin-right: auto; 
+max-width: 40em; 
+width: 88%; 
+} 
+</style> 
+</head> 
+<body> 
+
+<div class="form-group"> 
+<p>Число 1 </p> 
+<input type="numder" id="numder2" class="form-control"></input> 
+
+
+<p>Число 2 </p> 
+<input type="text" id="numder3" class="form-control"></input> 
+</div> 
+<button onclick="multi1()" id="plus" >+</button> 
+<button onclick="multi2()" id="minus" >-</button> 
+<button onclick="multi3()" id="umnow">*</button> 
+<button onclick="multi4()" id="deli">/</button> 
+
+
+<script> 
+
+
+function multi1(){ 
+var x = document.getElementById('numder2').value; 
+var y = document.getElementById('numder3').value; 
+var result; 
+result = +x+ +y; 
+alert(result); 
+
+
+} 
+
+function multi2(){ 
+alert(document.getElementById('numder2').value-document.getElementById('numder3').value); 
+} 
+function multi3(){ 
+alert(document.getElementById('numder2').value*document.getElementById('numder3').value); 
+} 
+function multi4(){ 
+alert(document.getElementById('numder2').value/document.getElementById('numder3').value); 
+} 
+
+
+
+</script> 
+
+</body> 
+</html>
