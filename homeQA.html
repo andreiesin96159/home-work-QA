@@ -25,7 +25,8 @@ width: 88%;
 <button onclick="multi1()" id="plus" >+</button> 
 <button onclick="multi2()" id="minus" >-</button> 
 <button onclick="multi3()" id="umnow">*</button> 
-<button onclick="multi4()" id="deli">/</button> 
+<button onclick="multi4()" id="deli">/</button>
+<button onclick="multi5()" id="deli">&</button>
 
 
 <script> 
@@ -49,9 +50,10 @@ alert(document.getElementById('numder2').value*document.getElementById('numder3'
 } 
 function multi4(){ 
 alert(document.getElementById('numder2').value/document.getElementById('numder3').value); 
-} 
-
-
+}
+function multi5() {
+    alert( Math.pow(document.getElementById('numder2').value, document.getElementById('numder3').value));
+}
 
 </script> 
 
